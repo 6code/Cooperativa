@@ -24,7 +24,7 @@ import java.util.List;
 public class FragmentCadastro extends Fragment {
 
     private AlertDialog alerta;
-
+    private AlertDialog alerta2;
     //variavel para capturar contexto
     private Context context;
 
@@ -98,7 +98,16 @@ public class FragmentCadastro extends Fragment {
         lw.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //atelrar
+                        alertaAlterar();
+
+            }
+        });
+
+        Button salvar =(Button) view.findViewById(R.id.salvar);
+        salvar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alerta.dismiss();
             }
         });
 
@@ -109,4 +118,31 @@ public class FragmentCadastro extends Fragment {
         alerta.show();
 
     }
-}
+
+
+    public void alertaAlterar() {
+
+        LayoutInflater inflater = getLayoutInflater();
+
+        View view = inflater.inflate(R.layout.alerta_alterar_tiporesiduo, null);
+
+        Button btn = (Button) view.findViewById(R.id.alterar);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                alerta2.dismiss();
+
+            }
+        });
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle("Alterar tipo de resíduo: ");
+        builder.setView(view);
+        alerta2 = builder.create();
+        alerta2.show();
+
+    }
+
+
+    }
