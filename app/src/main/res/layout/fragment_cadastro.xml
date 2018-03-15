@@ -23,22 +23,30 @@
             android:id="@+id/tiporesiduo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/botoes_de_submenu"
             android:text="Tipo de resíduo" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/botoes_de_submenu"
             android:text="Cooperados e Associados" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/botoes_de_submenu"
             android:text="Compradores" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/botoes_de_submenu"
             android:text="Critério de divisão" />
 
     </LinearLayout>
