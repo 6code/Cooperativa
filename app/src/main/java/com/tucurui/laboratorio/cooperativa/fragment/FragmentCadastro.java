@@ -23,9 +23,8 @@ import java.util.List;
 
 public class FragmentCadastro extends Fragment {
 
-    private AlertDialog alerta;
-    private AlertDialog alerta2;
-    //variavel para capturar contexto
+    private AlertDialog alertaTipoR;
+    private AlertDialog alertaAlterarTipoR;
     private Context context;
 
     //captura o contexto de quem me chamou
@@ -44,7 +43,7 @@ public class FragmentCadastro extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                alerta();
+                alertaTipoR();
             }
         });
 
@@ -55,7 +54,7 @@ public class FragmentCadastro extends Fragment {
 
 
     //ALERTAS
-    public void alerta() {
+    public void alertaTipoR() {
 
         LayoutInflater inflater = getLayoutInflater();
 
@@ -98,7 +97,7 @@ public class FragmentCadastro extends Fragment {
         lw.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        alertaAlterar();
+                        alertaAlterarTipoR();
 
             }
         });
@@ -107,20 +106,20 @@ public class FragmentCadastro extends Fragment {
         salvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                alerta.dismiss();
+                alertaTipoR.dismiss();
             }
         });
 
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("Defina o tipo de resíduo: ");
         builder.setView(view);
-        alerta = builder.create();
-        alerta.show();
+        alertaTipoR = builder.create();
+        alertaTipoR.show();
 
     }
 
 
-    public void alertaAlterar() {
+    public void alertaAlterarTipoR() {
 
         LayoutInflater inflater = getLayoutInflater();
 
@@ -131,7 +130,7 @@ public class FragmentCadastro extends Fragment {
             @Override
             public void onClick(View view) {
 
-                alerta2.dismiss();
+                alertaAlterarTipoR.dismiss();
 
             }
         });
@@ -139,8 +138,8 @@ public class FragmentCadastro extends Fragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setTitle("Alterar tipo de resíduo: ");
         builder.setView(view);
-        alerta2 = builder.create();
-        alerta2.show();
+        alertaAlterarTipoR = builder.create();
+        alertaAlterarTipoR.show();
 
     }
 
