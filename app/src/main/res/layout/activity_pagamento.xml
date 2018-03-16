@@ -27,7 +27,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/botoes_de_menu"
         android:text="Realizar Pagamento"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
