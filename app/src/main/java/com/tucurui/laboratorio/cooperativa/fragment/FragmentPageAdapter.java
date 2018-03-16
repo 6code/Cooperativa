@@ -33,7 +33,6 @@ public class FragmentPageAdapter extends FragmentPagerAdapter {
     public void addFragment(Fragment fragment, String title) {
         mFragmentList.add(fragment);
         mFragmentTitleList.add(title);
-
     }
 
     @Override

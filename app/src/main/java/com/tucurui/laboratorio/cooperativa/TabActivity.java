@@ -6,9 +6,10 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.tucurui.laboratorio.cooperativa.fragment.FragmentCadastro;
-import com.tucurui.laboratorio.cooperativa.fragment.fragmentRelatorio;
+import com.tucurui.laboratorio.cooperativa.fragment.FragmentCaixa;
 import com.tucurui.laboratorio.cooperativa.fragment.FragmentEstoque;
 import com.tucurui.laboratorio.cooperativa.fragment.FragmentPageAdapter;
+import com.tucurui.laboratorio.cooperativa.fragment.fragmentRelatorio;
 
 public class TabActivity extends AppCompatActivity {
 
@@ -27,9 +28,11 @@ public class TabActivity extends AppCompatActivity {
         FragmentPageAdapter adapter = new FragmentPageAdapter(getSupportFragmentManager());
 
         //adiciono meu fragments no adpter
+        adapter.addFragment(new FragmentCaixa(), "CAIXA");
         adapter.addFragment(new FragmentCadastro(), "CADASTRO");
         adapter.addFragment(new FragmentEstoque(), "ESTOQUE");
         adapter.addFragment(new fragmentRelatorio(), "RELATÓRIO");
+
 
         mViewPager.setAdapter(adapter);
         mTabLayout.setupWithViewPager(mViewPager);
