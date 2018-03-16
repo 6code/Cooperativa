@@ -29,15 +29,19 @@ public class TabActivity extends AppCompatActivity {
         FragmentPageAdapter adapter = new FragmentPageAdapter(getSupportFragmentManager());
 
         //adiciono meu fragments no adpter
-        adapter.addFragment(new FragmentCadastro(), "CADASTRO");
-        adapter.addFragment(new FragmentEstoque(), "ESTOQUE");
-        adapter.addFragment(new fragmentRelatorio(), "RELATÓRIO");
-        adapter.addFragment(new FragmentCaixa(), "CAIXA");
+        adapter.addFragment(new FragmentCadastro(), ".");
+        adapter.addFragment(new FragmentEstoque(), ".");
+        adapter.addFragment(new fragmentRelatorio(), ".");
+        adapter.addFragment(new FragmentCaixa(), ".");
 
 
         mViewPager.setAdapter(adapter);
         mTabLayout.setupWithViewPager(mViewPager);
 
+        mTabLayout.getTabAt(0).setIcon(R.drawable.user);
+        mTabLayout.getTabAt(1).setIcon(R.drawable.relatorio);
+        mTabLayout.getTabAt(2).setIcon(R.drawable.relater);
+        mTabLayout.getTabAt(3).setIcon(R.drawable.money);
 
 
 
