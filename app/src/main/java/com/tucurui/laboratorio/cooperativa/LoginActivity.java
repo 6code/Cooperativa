@@ -2,6 +2,8 @@ package com.tucurui.laboratorio.cooperativa;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +23,12 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent(getApplicationContext(), TabActivity.class);
-                startActivity(intent);
+                ActivityOptionsCompat activityOptionsCompat = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(),R.anim.entrada, R.anim.mover_direita);
+                ActivityCompat.startActivity(LoginActivity.this, intent, activityOptionsCompat.toBundle());
+
+                //startActivity(intent);
+
+
 
             }
         });
