@@ -11,7 +11,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="76dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:orientation="vertical"
@@ -23,7 +23,7 @@
             android:id="@+id/tiporesiduo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
             android:text="Tipo de resíduo" />
 
@@ -31,14 +31,14 @@
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
             android:text="Cooperados e Associados" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
             android:text="Compradores" />
 
@@ -60,6 +60,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Realizar Cadastro de: "
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

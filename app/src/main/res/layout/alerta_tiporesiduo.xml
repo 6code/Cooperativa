@@ -50,9 +50,11 @@
             android:id="@+id/salvar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botoes_de_submenu2"
             android:backgroundTint="@color/colorAccent"
             android:text="Salvar"
-            android:textColor="@android:color/background_light" />
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
 
         <ListView
             android:id="@+id/lisadetiposderesiduos"

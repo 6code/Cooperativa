@@ -15,6 +15,7 @@
         android:layout_marginTop="8dp"
         android:text="Registrar no estoque:"
         android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,27 +39,36 @@
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botoes_de_submenu"
             android:text="Doações" />
 
         <Button
             android:id="@+id/id_btn_catadores"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botoes_de_submenu"
             android:text="Catadores" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botoes_de_submenu"
             android:text="Perda" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botoes_de_submenu"
             android:text="Roubo" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/botoes_de_submenu"
             android:text="Venda" />
 
     </LinearLayout>
