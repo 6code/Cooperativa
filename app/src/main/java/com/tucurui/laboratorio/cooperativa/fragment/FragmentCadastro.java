@@ -39,7 +39,7 @@ public class FragmentCadastro extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_cadastro, container, false);
 
-        Button button = (Button) v.findViewById(R.id.tiporesiduo);
+        Button button = v.findViewById(R.id.tiporesiduo);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,7 +72,7 @@ public class FragmentCadastro extends Fragment {
         list.add("zinco");
 
 
-        ListView lw = (ListView) view.findViewById(R.id.lisadetiposderesiduos);
+        ListView lw = view.findViewById(R.id.lisadetiposderesiduos);
         // Create an ArrayAdapter from List
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
                 (context, android.R.layout.simple_list_item_1, list){
@@ -82,10 +82,10 @@ public class FragmentCadastro extends Fragment {
                 View view = super.getView(position, convertView, parent);
 
                 // Initialize a TextView for ListView each Item
-                TextView tv = (TextView) view.findViewById(android.R.id.text1);
+                TextView tv = view.findViewById(android.R.id.text1);
 
                 // Set the text color of TextView (ListView Item)
-                tv.setTextColor(Color.RED);
+                tv.setTextColor(Color.BLACK);
 
                 // Generate ListView Item using TextView
                 return view;
@@ -102,7 +102,7 @@ public class FragmentCadastro extends Fragment {
             }
         });
 
-        Button salvar =(Button) view.findViewById(R.id.salvar);
+        Button salvar = view.findViewById(R.id.salvar);
         salvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -125,7 +125,7 @@ public class FragmentCadastro extends Fragment {
 
         View view = inflater.inflate(R.layout.alerta_alterar_tiporesiduo, null);
 
-        Button btn = (Button) view.findViewById(R.id.alterar);
+        Button btn = view.findViewById(R.id.alterar);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
