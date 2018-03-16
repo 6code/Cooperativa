@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@android:color/background_light">
 
 
     <LinearLayout
@@ -42,13 +41,6 @@
             android:background="@drawable/botoes_de_submenu"
             android:text="Compradores" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/botoes_de_submenu"
-            android:text="Critério de divisão" />
-
     </LinearLayout>
 
     <TextView
@@ -60,6 +52,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="Realizar Cadastro de: "
+        android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"

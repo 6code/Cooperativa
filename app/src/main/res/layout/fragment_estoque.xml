@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/mar">
+    android:background="@android:color/background_light">
 
     <TextView
         android:id="@+id/textView2"
@@ -36,27 +36,27 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            android:id="@+id/id_btn_catadores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botoes_de_submenu"
+            android:text="entrega de resíduos" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botoes_de_submenu"
+            android:text="Venda" />
+
+        <Button
             android:id="@+id/id_btnDoações"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
             android:text="Doações" />
-
-        <Button
-            android:id="@+id/id_btn_catadores"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/botoes_de_submenu"
-            android:text="Catadores" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/botoes_de_submenu"
-            android:text="Perda" />
 
         <Button
             android:layout_width="match_parent"
@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/botoes_de_submenu"
-            android:text="Venda" />
+            android:text="Perda" />
 
     </LinearLayout>
 

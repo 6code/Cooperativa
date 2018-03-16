@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/monte"
+    android:background="@android:color/background_light"
     tools:context="com.tucurui.laboratorio.cooperativa.MainActivity">
 
     <TextView
@@ -17,7 +17,7 @@
         android:text="Saldo distribuído entre cooperadores e associados:"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/background_dark"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -34,7 +34,7 @@
         android:text="Saldo atual do caixa R$: 3.120,00"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +50,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="Configurações"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/background_dark"
         android:textColorLink="@android:color/background_light"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
