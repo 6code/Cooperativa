@@ -15,7 +15,6 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.tucurui.laboratorio.cooperativa.ConfiguracoesActivity;
 import com.tucurui.laboratorio.cooperativa.PagamentoActivity;
 import com.tucurui.laboratorio.cooperativa.R;
 
@@ -95,16 +94,6 @@ public class FragmentCaixa extends Fragment {
             }
         });
 
-
-        tw = v.findViewById(R.id.config);
-        tw.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(context, ConfiguracoesActivity.class);
-                startActivity(intent);
-            }
-        });
 
         return v;
     }

@@ -29,10 +29,10 @@ public class TabActivity extends AppCompatActivity {
         FragmentPageAdapter adapter = new FragmentPageAdapter(getSupportFragmentManager());
 
         //adiciono meu fragments no adpter
-        adapter.addFragment(new FragmentCadastro(), ".");
-        adapter.addFragment(new FragmentEstoque(), ".");
-        adapter.addFragment(new FragmentCaixa(), ".");
-        adapter.addFragment(new fragmentRelatorio(), ".");
+        adapter.addFragment(new FragmentCadastro(), "");
+        adapter.addFragment(new FragmentEstoque(), "");
+        adapter.addFragment(new FragmentCaixa(), "");
+        adapter.addFragment(new fragmentRelatorio(), "");
 
 
 
