@@ -73,7 +73,8 @@
             android:layout_height="36dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="definir criterio de divisão" />
+            android:text="Personalizar criterio de divisão"
+            android:textColor="@android:color/holo_red_light" />
 
     </LinearLayout>
 
