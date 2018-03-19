@@ -35,6 +35,7 @@
             android:layout_width="74dp"
             android:layout_height="50dp"
             android:layout_weight="1"
+            android:background="@drawable/caixa_de_texto_sem_cor"
             android:ems="10"
             android:inputType="number"
             android:textAlignment="center"
