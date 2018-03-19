@@ -42,7 +42,7 @@ public class CadastroActivity extends AppCompatActivity {
 
         GerarLogin gerarLogin = new GerarLogin();
 
-        String msg = "Login: " + gerarLogin.gerarEmailAleatoro("exemplo") + "\n Senha: " + gerarLogin.gerarSenhaAleatoria();
+        String msg = "Usuario: " + gerarLogin.gerarEmailAleatoro("exemplo") + "\n Senha: " + gerarLogin.gerarSenhaAleatoria();
 
         tl.setText(msg);
 
