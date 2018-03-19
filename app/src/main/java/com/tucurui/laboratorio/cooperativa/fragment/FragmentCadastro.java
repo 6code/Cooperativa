@@ -164,16 +164,18 @@ public class FragmentCadastro extends Fragment {
         ListView listView = view.findViewById(R.id.id_listafuncoes);
 
         List<String> list = new ArrayList<>();
-        list.add("catador - 0.98%");
-        list.add("motorista - 1.45%");
-        list.add("exemplo - 2%");
-        list.add("exemplo - 2%");
-        list.add("exemplo - 2%");
-        list.add("exemplo - 2%");
-        list.add("exemplo - 2%");
-        list.add("exemplo - 2%");
-        list.add("exemplo - 2%");
-        list.add("exemplo - 2%");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
 
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(context, R.layout.support_simple_spinner_dropdown_item, list);

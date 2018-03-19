@@ -30,13 +30,6 @@
             android:hint="nome da funcao:"
             android:inputType="textPersonName" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="percetual de criterio de divisao:"
-            android:inputType="numberDecimal" />
-
         <Button
             android:id="@+id/id_btnSalvar"
             android:layout_width="match_parent"
