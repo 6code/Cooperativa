@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cooperativa</string>
+    <string name="app_name">Protótipo</string>
     <string name="title_activity_nav">NavActivity</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
