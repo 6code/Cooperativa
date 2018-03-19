@@ -41,7 +41,7 @@ public class TabActivity extends AppCompatActivity {
         mTabLayout.setupWithViewPager(mViewPager);
 
         mTabLayout.getTabAt(0).setIcon(R.drawable.relatorio);
-        mTabLayout.getTabAt(1).setIcon(R.drawable.up);
+        mTabLayout.getTabAt(1).setIcon(R.drawable.estoque);
         mTabLayout.getTabAt(2).setIcon(R.drawable.money);
         mTabLayout.getTabAt(3).setIcon(R.drawable.relater);
 
