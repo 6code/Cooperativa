@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tucurui.laboratorio.cooperativa.VendaActivity">
+    tools:context="com.tucurui.laboratorio.cooperativa.act.VendaActivity">
 
 
     <Button
@@ -86,7 +86,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Produto:   \nComprador:   \nQunatidade:   \nValor:   \nCriterio:  "
+        android:text="Produto: exemplo  \nComprador: exemplo  \nQunatidade:  exemplo \nValor:  exemplo \nCriterio:  Proporcional"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/id_btn_venda_realizarVenda"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

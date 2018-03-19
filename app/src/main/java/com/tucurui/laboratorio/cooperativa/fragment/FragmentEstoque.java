@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.tucurui.laboratorio.cooperativa.R;
-import com.tucurui.laboratorio.cooperativa.VendaActivity;
+import com.tucurui.laboratorio.cooperativa.act.VendaActivity;
 
 public class FragmentEstoque extends Fragment {
 

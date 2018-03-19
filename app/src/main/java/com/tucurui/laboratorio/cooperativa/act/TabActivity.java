@@ -1,10 +1,11 @@
-package com.tucurui.laboratorio.cooperativa;
+package com.tucurui.laboratorio.cooperativa.act;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
+import com.tucurui.laboratorio.cooperativa.R;
 import com.tucurui.laboratorio.cooperativa.fragment.FragmentCadastro;
 import com.tucurui.laboratorio.cooperativa.fragment.FragmentCaixa;
 import com.tucurui.laboratorio.cooperativa.fragment.FragmentEstoque;

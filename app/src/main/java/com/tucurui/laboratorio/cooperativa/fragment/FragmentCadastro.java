@@ -25,6 +25,7 @@ public class FragmentCadastro extends Fragment {
 
     private AlertDialog alertaTipoR;
     private AlertDialog alertaAlterarTipoR;
+    private AlertDialog alertaCadastarFuncao;
     private Context context;
 
     //captura o contexto de quem me chamou
@@ -46,6 +47,16 @@ public class FragmentCadastro extends Fragment {
                 alertaTipoR();
             }
         });
+
+
+        Button funcao = v.findViewById(R.id.id_cadastro_funcao);
+        funcao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertCadastarFuncao();
+            }
+        });
+
 
 
         return v;
@@ -140,6 +151,39 @@ public class FragmentCadastro extends Fragment {
         builder.setView(view);
         alertaAlterarTipoR = builder.create();
         alertaAlterarTipoR.show();
+
+    }
+
+
+    public void AlertCadastarFuncao() {
+
+        LayoutInflater inflater = getLayoutInflater();
+
+        View view = inflater.inflate(R.layout.alerta_cadastarfuncao, null);
+
+        ListView listView = view.findViewById(R.id.id_listafuncoes);
+
+        List<String> list = new ArrayList<>();
+        list.add("catador - 0.98%");
+        list.add("motorista - 1.45%");
+        list.add("exemplo - 2%");
+        list.add("exemplo - 2%");
+        list.add("exemplo - 2%");
+        list.add("exemplo - 2%");
+        list.add("exemplo - 2%");
+        list.add("exemplo - 2%");
+        list.add("exemplo - 2%");
+        list.add("exemplo - 2%");
+
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(context, R.layout.support_simple_spinner_dropdown_item, list);
+        listView.setAdapter(adapter);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle("Cadastrar funçao: ");
+        builder.setView(view);
+        alertaCadastarFuncao = builder.create();
+        alertaCadastarFuncao.show();
 
     }
 

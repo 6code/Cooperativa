@@ -1,10 +1,12 @@
-package com.tucurui.laboratorio.cooperativa;
+package com.tucurui.laboratorio.cooperativa.act;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.tucurui.laboratorio.cooperativa.R;
 
 public class PagamentoActivity extends AppCompatActivity {
 
@@ -16,8 +18,8 @@ public class PagamentoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pagamento);
 
-        pag = (Button) findViewById(R.id.idRealizarPag);
-        c = (TextView) findViewById(R.id.idColab);
+        pag = findViewById(R.id.idRealizarPag);
+        c = findViewById(R.id.idColab);
 
         Intent intent = getIntent();
         c.setText(intent.getStringExtra("colaborador"));

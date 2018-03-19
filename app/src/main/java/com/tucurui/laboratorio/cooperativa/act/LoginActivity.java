@@ -1,4 +1,4 @@
-package com.tucurui.laboratorio.cooperativa;
+package com.tucurui.laboratorio.cooperativa.act;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,9 @@ import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.tucurui.laboratorio.cooperativa.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -30,6 +33,17 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
+            }
+        });
+
+
+        TextView cadastar = findViewById(R.id.cadastrar);
+        cadastar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), CadastroActivity.class);
+                startActivity(intent);
             }
         });
 

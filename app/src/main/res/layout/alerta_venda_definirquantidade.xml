@@ -21,11 +21,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textquantidade"
+        app:layout_constraintTop_toBottomOf="@+id/id_editsaldo"
         app:layout_constraintVertical_bias="0.007" />
 
     <EditText
-        android:id="@+id/textquantidade"
+        android:id="@+id/id_editsaldo"
         android:layout_width="74dp"
         android:layout_height="50dp"
         android:layout_marginLeft="16dp"
@@ -70,7 +70,7 @@
         app:layout_constraintBottom_toTopOf="@+id/adicionarAlerta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.741"
-        app:layout_constraintStart_toEndOf="@+id/textquantidade"
+        app:layout_constraintStart_toEndOf="@+id/id_editsaldo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.533"
         tools:text="MAIS" />

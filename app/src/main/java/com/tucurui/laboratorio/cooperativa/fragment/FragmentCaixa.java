@@ -15,8 +15,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.tucurui.laboratorio.cooperativa.PagamentoActivity;
 import com.tucurui.laboratorio.cooperativa.R;
+import com.tucurui.laboratorio.cooperativa.act.PagamentoActivity;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,6 @@
-package com.tucurui.laboratorio.cooperativa;
+package com.tucurui.laboratorio.cooperativa.act;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import com.tucurui.laboratorio.cooperativa.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +26,7 @@ public class VendaActivity extends AppCompatActivity {
 
     private ListView lw1;
     private ListView lw2;
-    private ListView lw3;
-    private ListView lw4;
-    private ListView lw5;
+
 
     private List<String> list;
     private ArrayAdapter<String> adapter1;
@@ -65,6 +67,7 @@ public class VendaActivity extends AppCompatActivity {
         Button btn3 = findViewById(R.id.id_btn_venda_defnirQuantidade);
         Button btn4 = findViewById(R.id.id_btn_venda_defnirValor);
         Button btn5 = findViewById(R.id.id_btn_venda_defnirCriterio);
+        Button btn6 = findViewById(R.id.id_btn_venda_realizarVenda);
 
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -98,7 +101,19 @@ public class VendaActivity extends AppCompatActivity {
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                alerta5();
+
+                Intent intent = new Intent(getApplicationContext(), PersonalizarCriterioActivity.class);
+                startActivity(intent);
+                //  alerta5();
+            }
+        });
+
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Toast.makeText(getApplicationContext(), "Venda realizada com sucesso!!", Toast.LENGTH_LONG).show();
+                finish();
             }
         });
 
@@ -152,7 +167,7 @@ public class VendaActivity extends AppCompatActivity {
 
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Qunatirade: ");
+        builder.setTitle("Quantidade: ");
         builder.setView(view);
         dialog3 = builder.create();
         dialog3.show();
@@ -174,22 +189,4 @@ public class VendaActivity extends AppCompatActivity {
 
     }
 
-    public void alerta5() {
-
-        LayoutInflater inflater = getLayoutInflater();
-
-        View view = inflater.inflate(R.layout.alerta_venda_definircriterio, null);
-
-        lw5 = view.findViewById(R.id.id_venda_listcriterio);
-        adapter5 = new ArrayAdapter<String>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, list);
-        lw5.setAdapter(adapter5);
-
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("");
-        builder.setView(view);
-        dialog5 = builder.create();
-        dialog5.show();
-
-    }
 }
