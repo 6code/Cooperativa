@@ -24,8 +24,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="277dp"
+        android:layout_height="284dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
@@ -38,7 +38,7 @@
         <Button
             android:id="@+id/id_btn_venda_selecionarProduto"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
             android:text="selecionar produto" />
@@ -46,7 +46,7 @@
         <Button
             android:id="@+id/id_btn_venda_selecionarComprador"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
             android:text="selecionar comprador" />
@@ -54,7 +54,7 @@
         <Button
             android:id="@+id/id_btn_venda_defnirQuantidade"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
             android:text="definir quantidade/valor" />
@@ -62,7 +62,7 @@
         <Button
             android:id="@+id/id_btn_venda_defnirCriterio"
             android:layout_width="match_parent"
-            android:layout_height="36dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
             android:text="visualizar criterio de divisão"

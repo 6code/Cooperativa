@@ -117,7 +117,6 @@ public class VendaActivity extends AppCompatActivity {
         list1.add("Plastico");
 
 
-
         lw1 = view.findViewById(R.id.id_venda_listcompradores);
         adapter1 = new ArrayAdapter<String>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, list1);
         lw1.setAdapter(adapter1);
