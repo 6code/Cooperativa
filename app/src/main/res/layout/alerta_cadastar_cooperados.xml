@@ -27,11 +27,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="nome da funcao:"
+            android:hint="Nome:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Função:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Idade:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Endereço:"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Telefone:"
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/id_btnSalvar"
+            android:id="@+id/salvar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/caixa_de_texto"
@@ -41,7 +73,7 @@
             android:textSize="16sp" />
 
         <ListView
-            android:id="@+id/id_listafuncoes"
+            android:id="@+id/id_list_alerta_cadastroCooperados"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/caixa_de_texto_sem_cor" />

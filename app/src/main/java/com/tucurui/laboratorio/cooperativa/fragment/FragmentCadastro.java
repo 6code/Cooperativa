@@ -40,28 +40,32 @@ public class FragmentCadastro extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_cadastro, container, false);
 
-        Button button = v.findViewById(R.id.tiporesiduo);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button button1 = v.findViewById(R.id.tiporesiduo);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 alertaTipoR();
             }
         });
 
-
-        Button funcao = v.findViewById(R.id.id_cadastro_funcao);
-        funcao.setOnClickListener(new View.OnClickListener() {
+        Button button2 = v.findViewById(R.id.id_btn_cadastroCooperados);
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertCadastarFuncao();
+                alertaCadastrarCooperados();
             }
         });
 
-
+        Button button3 = v.findViewById(R.id.id_btn_cadastroCompradores);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alertaCadastrarCompradores();
+            }
+        });
 
         return v;
     }
-
 
 
     //ALERTAS
@@ -108,7 +112,7 @@ public class FragmentCadastro extends Fragment {
         lw.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        alertaAlterarTipoR();
+                alertaAlterarTipoR();
 
             }
         });
@@ -155,39 +159,85 @@ public class FragmentCadastro extends Fragment {
     }
 
 
-    public void AlertCadastarFuncao() {
+    public void alertaCadastrarCooperados() {
+
+        AlertDialog dialog;
 
         LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.alerta_cadastar_cooperados, null);
 
-        View view = inflater.inflate(R.layout.alerta_cadastarfuncao, null);
-
-        ListView listView = view.findViewById(R.id.id_listafuncoes);
+        ListView listView = view.findViewById(R.id.id_list_alerta_cadastroCooperados);
 
         List<String> list = new ArrayList<>();
-        list.add("exemplo");
-        list.add("exemplo");
-        list.add("exemplo");
-        list.add("exemplo");
-        list.add("exemplo");
-        list.add("exemplo");
-        list.add("exemplo");
-        list.add("exemplo");
-        list.add("exemplo");
-        list.add("exemplo");
-        list.add("exemplo");
-        list.add("exemplo");
 
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(context, R.layout.support_simple_spinner_dropdown_item, list);
         listView.setAdapter(adapter);
 
+
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle("Cadastrar funçao: ");
+        builder.setTitle("Cadastrar cooperado: ");
         builder.setView(view);
-        alertaCadastarFuncao = builder.create();
-        alertaCadastarFuncao.show();
+        dialog = builder.create();
+        dialog.show();
 
     }
 
 
+    public void alertaCadastrarCompradores() {
+
+        AlertDialog dialog;
+
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.alerta_cadastro_compradores, null);
+
+        ListView listView = view.findViewById(R.id.id_list_alerta_cadastroCompradores);
+
+        List<String> list = new ArrayList<>();
+
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+        list.add("exemplo");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(context, R.layout.support_simple_spinner_dropdown_item, list);
+        listView.setAdapter(adapter);
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setTitle("cadastar comprador: ");
+        builder.setView(view);
+        dialog = builder.create();
+        dialog.show();
+
     }
+
+}
+
+
