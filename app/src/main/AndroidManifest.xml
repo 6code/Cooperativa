@@ -19,7 +19,6 @@
         <activity android:name=".act.TabActivity" />
         <activity android:name=".act.PagamentoActivity" />
         <activity android:name=".act.VendaActivity" />
-        <activity android:name=".act.PersonalizarCriterioActivity" />
         <activity android:name=".act.CadastroActivity"></activity>
     </application>
 

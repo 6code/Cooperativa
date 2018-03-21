@@ -7,11 +7,13 @@ package com.tucurui.laboratorio.cooperativa.models;
 public class Cooperado {
 
     String nome;
-    String saldo;
+    String estoque;
+    String qtdVenda;
 
-    public Cooperado(String nome, String saldo) {
+    public Cooperado(String nome, String estoque, String qtdVenda) {
         this.nome = nome;
-        this.saldo = saldo;
+        this.estoque = estoque;
+        this.qtdVenda = qtdVenda;
     }
 
     public String getNome() {
@@ -22,19 +24,19 @@ public class Cooperado {
         this.nome = nome;
     }
 
-    public String getSaldo() {
-        return saldo;
+    public String getEstoque() {
+        return estoque;
     }
 
-    public void setSaldo(String saldo) {
-        this.saldo = saldo;
+    public void setEstoque(String estoque) {
+        this.estoque = estoque;
     }
 
-    @Override
-    public String toString() {
-        return "Cooperado{" +
-                "nome='" + nome + '\'' +
-                ", saldo='" + saldo + '\'' +
-                '}';
+    public String getQtdVenda() {
+        return qtdVenda;
+    }
+
+    public void setQtdVenda(String qtdVenda) {
+        this.qtdVenda = qtdVenda;
     }
 }

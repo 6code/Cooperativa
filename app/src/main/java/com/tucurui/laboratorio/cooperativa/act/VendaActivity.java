@@ -1,6 +1,5 @@
 package com.tucurui.laboratorio.cooperativa.act;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.tucurui.laboratorio.cooperativa.R;
+import com.tucurui.laboratorio.cooperativa.adapterListView.CooperadoAdpter;
+import com.tucurui.laboratorio.cooperativa.models.Cooperado;
 import com.tucurui.laboratorio.cooperativa.models.Venda;
 
 import java.util.ArrayList;
@@ -86,14 +87,7 @@ public class VendaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(), PersonalizarCriterioActivity.class);
-                intent.putExtra("produto", venda.getProdruto());
-                intent.putExtra("comprador", venda.getComprador());
-                intent.putExtra("valor", venda.getValor());
-                intent.putExtra("quantidade", venda.getQuantidade());
-                intent.putExtra("criterio", venda.getCriterio());
-
-                startActivity(intent);
+                alerta4();
 
             }
         });
@@ -215,5 +209,40 @@ public class VendaActivity extends AppCompatActivity {
 
     }
 
+    public void alerta4() {
 
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.activity_personalizar_criterio, null);
+
+        ListView lw5 = view.findViewById(R.id.id_venda_listcriterio);
+
+        List<Cooperado> cooperados = new ArrayList();
+
+        TextView t = view.findViewById(R.id.totaldistribuido);
+        t.setText("quantidade distribuída: 70 kg");
+
+        cooperados.add(new Cooperado("Eduardo", "10", "10"));
+        cooperados.add(new Cooperado("Heleno", "10", "10"));
+        cooperados.add(new Cooperado("Eurialdo", "20", "20"));
+        cooperados.add(new Cooperado("Maria", "30", "30"));
+
+
+        ArrayAdapter<Cooperado> adapter = new CooperadoAdpter(getApplicationContext(), cooperados);
+        lw5.setAdapter(adapter);
+
+
+        Button button = view.findViewById(R.id.id_comfirmar);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog4.dismiss();
+            }
+        });
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setView(view);
+        dialog4 = builder.create();
+        dialog4.show();
+    }
 }
