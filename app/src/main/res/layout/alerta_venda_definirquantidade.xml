@@ -8,7 +8,7 @@
 
     <EditText
         android:id="@+id/id_edit_qtde"
-        android:layout_width="71dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -23,7 +23,7 @@
     <Button
         android:id="@+id/id_btn_defnirQtdeValor"
         android:layout_width="0dp"
-        android:layout_height="49dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -54,7 +54,7 @@
 
     <EditText
         android:id="@+id/id_edit_valor"
-        android:layout_width="71dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -68,9 +68,8 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="175dp"
-        android:layout_height="28dp"
-        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
         android:text="Quantidade em Kg:"
