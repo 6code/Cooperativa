@@ -41,7 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="entrega de resíduos" />
+            android:text="entrega de resíduos"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:id="@+id/id_venda"
@@ -49,7 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="Venda" />
+            android:text="Venda"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:id="@+id/id_btnDoações"
@@ -57,20 +59,23 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="Doações" />
+            android:text="Doações"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="Roubo" />
+            android:text="Roubo"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/botoes_de_submenu"
-            android:text="Perda" />
+            android:text="Perda"
+            android:textColor="@color/TextColor" />
 
     </LinearLayout>
 

@@ -71,7 +71,7 @@ public class FragmentCaixa extends Fragment {
                 TextView tv = view.findViewById(android.R.id.text1);
 
                 // Set the text color of TextView (ListView Item)
-                tv.setTextColor(Color.BLACK);
+                tv.setTextColor(Color.WHITE);
 
                 // Generate ListView Item using TextView
                 return view;

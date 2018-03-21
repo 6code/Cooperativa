@@ -59,7 +59,7 @@
             android:id="@+id/lisadetiposderesiduos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/caixa_de_texto_sem_cor" />
+            android:background="@color/DividerColor" />
 
     </LinearLayout>
 

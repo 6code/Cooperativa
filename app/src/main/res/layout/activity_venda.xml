@@ -41,7 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="selecionar produto" />
+            android:text="selecionar produto"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:id="@+id/id_btn_venda_selecionarComprador"
@@ -49,7 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="selecionar comprador" />
+            android:text="selecionar comprador"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:id="@+id/id_btn_venda_defnirQuantidade"
@@ -57,7 +59,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="definir quantidade/valor" />
+            android:text="definir quantidade/valor"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:id="@+id/id_btn_venda_defnirCriterio"

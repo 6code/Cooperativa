@@ -26,7 +26,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="Inventário" />
+            android:text="Inventário"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:id="@+id/button4"
@@ -34,27 +35,31 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="Vendas" />
+            android:text="Vendas"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="Divisão de Vendas" />
+            android:text="Divisão de Vendas"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="Entregas por catador" />
+            android:text="Entregas por catador"
+            android:textColor="@color/TextColor" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/botoes_de_submenu"
-            android:text="Geral" />
+            android:text="Geral"
+            android:textColor="@color/TextColor" />
 
     </LinearLayout>
 
