@@ -57,15 +57,7 @@
             android:layout_height="36dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="definir quantidade" />
-
-        <Button
-            android:id="@+id/id_btn_venda_defnirValor"
-            android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/botoes_de_submenu"
-            android:text="definir valor" />
+            android:text="definir quantidade/valor" />
 
         <Button
             android:id="@+id/id_btn_venda_defnirCriterio"
@@ -79,15 +71,14 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/id_TEXTVIEW_statusvenda"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="134dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/caixa_de_texto_sem_cor"
-        android:text="Produto: exemplo  \nComprador: exemplo  \nQuantidade:  exemplo \nValor:  exemplo \nCriterio:  Proporcional"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/id_btn_venda_realizarVenda"
