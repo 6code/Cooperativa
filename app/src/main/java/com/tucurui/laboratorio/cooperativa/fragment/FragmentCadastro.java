@@ -1,7 +1,6 @@
 package com.tucurui.laboratorio.cooperativa.fragment;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,7 +12,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.tucurui.laboratorio.cooperativa.R;
 
@@ -88,25 +86,7 @@ public class FragmentCadastro extends Fragment {
 
 
         ListView lw = view.findViewById(R.id.lisadetiposderesiduos);
-        // Create an ArrayAdapter from List
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
-                (context, android.R.layout.simple_list_item_1, list){
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent){
-                // Get the Item from ListView
-                View view = super.getView(position, convertView, parent);
-
-                // Initialize a TextView for ListView each Item
-                TextView tv = view.findViewById(android.R.id.text1);
-
-                // Set the text color of TextView (ListView Item)
-                tv.setTextColor(Color.WHITE);
-
-                // Generate ListView Item using TextView
-                return view;
-            }
-        };
-
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(context, R.layout.support_simple_spinner_dropdown_item, list);
         lw.setAdapter(arrayAdapter);
 
         lw.setOnItemClickListener(new AdapterView.OnItemClickListener() {

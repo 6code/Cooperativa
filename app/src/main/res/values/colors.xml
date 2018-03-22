@@ -3,6 +3,6 @@
     <color name="colorPrimary">#4caf50</color>
     <color name="colorPrimaryDark">#388e3c</color>
     <color name="colorAccent">#8bc34a</color>
-    <color name="DividerColor">#586060</color>
-    <color name="TextColor">#ffffff</color>
+    <color name="DividerColor">#bdbdbd</color>
+    <color name="TextColor">#000000</color>
 </resources>

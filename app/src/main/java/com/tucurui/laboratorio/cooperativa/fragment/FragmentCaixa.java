@@ -2,7 +2,6 @@ package com.tucurui.laboratorio.cooperativa.fragment;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -60,23 +59,7 @@ public class FragmentCaixa extends Fragment {
         listView = v.findViewById(R.id.list);
 
         // Create an ArrayAdapter from List
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
-                (context, android.R.layout.simple_list_item_1, list) {
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent){
-                // Get the Item from ListView
-                View view = super.getView(position, convertView, parent);
-
-                // Initialize a TextView for ListView each Item
-                TextView tv = view.findViewById(android.R.id.text1);
-
-                // Set the text color of TextView (ListView Item)
-                tv.setTextColor(Color.WHITE);
-
-                // Generate ListView Item using TextView
-                return view;
-            }
-        };
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, list);
 
         // DataBind ListView with items from ArrayAdapter
         listView.setAdapter(arrayAdapter);
