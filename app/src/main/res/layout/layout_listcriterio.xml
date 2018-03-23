@@ -20,7 +20,7 @@
             android:id="@+id/nome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nome:"
+            android:text="Nome: Exemplo"
             android:textAllCaps="true"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -29,13 +29,13 @@
             android:id="@+id/qtdeEstoque"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Quantidade no estoque:" />
+            android:text="Quantidade no estoque: 10kg" />
 
         <TextView
             android:id="@+id/qtdeVenda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Quantidade venda:" />
+            android:text="Quantidade venda: 10kg" />
 
     </LinearLayout>
 
