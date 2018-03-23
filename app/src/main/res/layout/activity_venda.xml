@@ -39,15 +39,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/id_btn_venda_selecionarProduto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/botoes_de_submenu"
-            android:text="selecionar produto"
-            android:textColor="@color/TextColor" />
-
-        <Button
             android:id="@+id/id_btn_venda_selecionarComprador"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,12 +48,12 @@
             android:textColor="@color/TextColor" />
 
         <Button
-            android:id="@+id/id_btn_venda_defnirQuantidade"
+            android:id="@+id/id_btn_venda_selecionarProduto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@drawable/botoes_de_submenu"
-            android:text="definir quantidade/valor"
+            android:text="selecionar produto"
             android:textColor="@color/TextColor" />
 
         <Button
@@ -92,7 +83,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.38"
+        tools:text="Comprador: \n Pordutos: \n Valor: \n Criterio:" />
 
 
 </android.support.constraint.ConstraintLayout>

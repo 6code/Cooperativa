@@ -13,12 +13,12 @@ import com.tucurui.laboratorio.cooperativa.models.Cooperado;
 
 import java.util.List;
 
-public class CooperadoAdpter extends ArrayAdapter<Cooperado> {
+public class CooperadoAdpter2 extends ArrayAdapter<Cooperado> {
 
     private Context context;
     private List<Cooperado> cooperados;
 
-    public CooperadoAdpter(Context context, List<Cooperado> pedidoList) {
+    public CooperadoAdpter2(Context context, List<Cooperado> pedidoList) {
         super(context, R.layout.layout_listcriterio, pedidoList);
         this.context = context;
         this.cooperados = pedidoList;
@@ -30,7 +30,8 @@ public class CooperadoAdpter extends ArrayAdapter<Cooperado> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.layout_listcriterio, parent, false);
+        View view = inflater.inflate(R.layout.selecionar_produto, parent, false);
+
 
         return view;
     }

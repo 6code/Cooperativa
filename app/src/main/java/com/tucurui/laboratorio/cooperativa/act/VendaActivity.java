@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.tucurui.laboratorio.cooperativa.R;
 import com.tucurui.laboratorio.cooperativa.adapterListView.CooperadoAdpter;
+import com.tucurui.laboratorio.cooperativa.adapterListView.CooperadoAdpter2;
 import com.tucurui.laboratorio.cooperativa.models.Cooperado;
 import com.tucurui.laboratorio.cooperativa.models.Venda;
 
@@ -55,7 +56,7 @@ public class VendaActivity extends AppCompatActivity {
 
         Button btn1 = findViewById(R.id.id_btn_venda_selecionarProduto);
         Button btn2 = findViewById(R.id.id_btn_venda_selecionarComprador);
-        Button btn3 = findViewById(R.id.id_btn_venda_defnirQuantidade);
+
 
         Button btn5 = findViewById(R.id.id_btn_venda_defnirCriterio);
         Button btn6 = findViewById(R.id.id_btn_venda_realizarVenda);
@@ -76,12 +77,6 @@ public class VendaActivity extends AppCompatActivity {
             }
         });
 
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                alerta3();
-            }
-        });
 
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,8 +113,16 @@ public class VendaActivity extends AppCompatActivity {
 
 
         lw1 = view.findViewById(R.id.id_venda_listcompradores);
-        adapter1 = new ArrayAdapter<String>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, list1);
-        lw1.setAdapter(adapter1);
+
+        List<Cooperado> cooperados = new ArrayList<>();
+        cooperados.add(null);
+        cooperados.add(null);
+        cooperados.add(null);
+        cooperados.add(null);
+        cooperados.add(null);
+
+        ArrayAdapter<Cooperado> arrayAdapter = new CooperadoAdpter2(getApplicationContext(), cooperados);
+        lw1.setAdapter(arrayAdapter);
 
 
         lw1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -154,15 +157,6 @@ public class VendaActivity extends AppCompatActivity {
         adapter2 = new ArrayAdapter<String>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, list2);
         lw2.setAdapter(adapter2);
 
-
-        lw2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                venda.setComprador(list2.get(i));
-                tw.setText(venda.toString());
-                dialog2.dismiss();
-            }
-        });
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Comprador: ");
